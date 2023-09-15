@@ -151,10 +151,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <ol type="1">
 <li>Write code for a plot and describe what you observe?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(covid_data_count, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> Cases)) <span class="sc">+</span> </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">group =</span> <span class="dv">1</span>), <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"COVID-19 Cases Over Time"</span>, </span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Date"</span>, </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Cases"</span>) <span class="sc">+</span> </span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1385 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Week_02_Covid_Vis_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<ol start="2" type="1">
 <li>Are there any conclusions you can draw?</li>
+</ol>
+<section id="yes-we-can-see-that-over-time-the-cases-aren-increasing-from-april-to-january" class="level1">
+<h1>yes, we can see that over time, the cases aren increasing from april to january</h1>
+<ol start="3" type="1">
 <li>What were you not able to do due to not having the R knowledge?</li>
+</ol>
+</section>
+<section id="the-data-was-unable-to-present-in-one-graph-without-using-r-knowledge-r-made-it-easier-to-visualize-a-huge-set-of-data." class="level1">
+<h1>the data was unable to present in one graph without using R knowledge, R made it easier to visualize a huge set of data.</h1>
+<ol start="4" type="1">
 <li>What other data would be useful to better understand this data?</li>
 </ol>
+</section>
+<section id="maybe-we-can-look-into-the-mortality-cases-happened-between-april-and-january-to-further-analyze-the-correlation-between-covid-cases-and-the-mortality-rate." class="level1">
+<h1>maybe we can look into the mortality cases happened between april and january to further analyze the correlation between covid cases and the mortality rate.</h1>
+</section>
 
 </main>
 <!-- /main column -->
