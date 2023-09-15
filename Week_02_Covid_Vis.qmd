@@ -36,6 +36,26 @@ covid_data_count |>
 ```
 
 1. Write code for a plot and describe what you observe?
+```{r}
+library(ggplot2)
+
+ggplot(covid_data_count, aes(x = date, y = Cases)) + 
+  geom_line(aes(group = 1), color = "blue") + 
+  geom_point(color = "red") + 
+  labs(title = "COVID-19 Cases Over Time", 
+       x = "Date", 
+       y = "Number of Cases") + 
+  theme_minimal()
+```
+
 2. Are there any conclusions you can draw?
+
+# yes, we can see that over time, the cases aren increasing from april to january
+
 3. What were you not able to do due to not having the R knowledge?
+
+# the data was unable to present in one graph without using R knowledge, R made it easier to visualize a huge set of data.
+
 4. What other data would be useful to better understand this data?
+
+# maybe we can look into the mortality cases happened between april and january to further analyze the correlation between covid cases and the mortality rate.
